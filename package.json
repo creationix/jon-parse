@@ -1,0 +1,10 @@
+{
+  "name": "jon-parse",
+  "version": "0.0.0",
+  "author": "Tim Caswell <tim@creationix.com>",
+  "main": "jon-parse.js",
+  "license": "MIT",
+  "dependencies": {
+    "bodec": "~0.0.0"
+  }
+}
