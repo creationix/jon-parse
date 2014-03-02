@@ -45,7 +45,9 @@ Form.prototype.toString = function () {
   return "@" + this.str;
 };
 
-exports.lex = lex;
+module.exports = parse;
+parse.lex = lex;
+
 function lex(jon) {
   var offset = 0, length = jon.length;
   var num = patterns.length;
@@ -94,7 +96,6 @@ function lex(jon) {
   return tokens;
 }
 
-exports.parse = parse;
 function parse(tokens) {
   if (typeof tokens === "string") tokens = lex(tokens);
   var length = tokens.length;
