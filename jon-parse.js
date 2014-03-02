@@ -74,7 +74,8 @@ function lex(jon) {
                 token === "INTEGER" ? parseInt(value, 10) :
                 token === "ZERO" ? 0 : undefined;
         if (token === "HEX" || token === "ZERO" || token === "INTEGER" ||
-            token === "BUFFER" || token === "FORM" || token === "SYMBOL") {
+            token === "BUFFER" || token === "FORM" || token === "SYMBOL" ||
+            token === "CONSTANT") {
           token = "VALUE";
         }
       }
